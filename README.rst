@@ -32,6 +32,12 @@ The latest version of the library is 1.1.0.
             'sensors',
             symbols={'id': 'toronto1'},
             columns={'temperature': 20.0, 'humidity': 0.5})
+
+        sender.row(
+            'sensors',
+            symbols={'id': 'paris3'},
+            columns={'temperature': 21.0, 'humidity': 0.6})
+
         sender.flush()
 
 You can also send Pandas dataframes:
